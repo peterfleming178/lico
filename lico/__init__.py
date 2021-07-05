@@ -89,8 +89,8 @@ if you get a serial error then the port might be wrong , try changing it.
 		while True:
 			x = str(input(">"))
 			#hasattr checks if a function exists inside a class when given the function name as a string
-			if hasattr(phycode,x):
-				result = eval("phycode."+x+"()")
+			if hasattr(self,x):
+				result = eval("self."+x+"()")
 			else:
 				print("Your input is not valid please try again")
 
