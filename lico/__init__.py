@@ -25,9 +25,9 @@ Keys which are accepted:
 4)  loading
 5)  flash
 6)  stop
-7)  blue
-8)  red
-9)  green
+7)  blue_
+8)  red_
+9)  green_
 10) blink
 
 if you get a serial error then the port might be wrong , try changing it.
@@ -87,34 +87,12 @@ if you get a serial error then the port might be wrong , try changing it.
 	def console(self):
 		#terminal control for all the leds
 		while True:
-			#could have made it into a few lines but was lazy , so ... :)
-			x = input(">")
-			if x == "error":
-				self.error()
-			elif x == "sucess":
-				self.sucess()
-			elif x == "warning":
-				self.warning()
-			elif x == "loading":
-				self.loading()
-			elif x == "flash":
-				self.flash()
-			elif x == "stop":
-				self.stop()
-			elif x == "red":
-				self.red_()
-			elif x == "blue":
-				self.blue_()
-			elif x == "green":
-				self.green_()
-			elif x == "blink":
-				self.blink()
-			elif x == "quit":
-				break
-			elif x == "help":
-				print(self.help)
+			x = str(input(">"))
+			#hasattr checks if a function exists inside a class when given the function name as a string
+			if hasattr(phycode,x):
+				result = eval("phycode."+x+"()")
 			else:
-				print("Not a valid Entry: Type help to see vaid entries")
+				print("Your input is not valid please try again")
 
 if __name__ == '__main__':
 	#test the leds and its function directly from the terminal
