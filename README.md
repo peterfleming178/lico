@@ -1,5 +1,5 @@
 # Lico
-a light indicator for your python code
+A light indicator using arduino for your python code
 
 ## Requirements 
 1) pyfirmata
@@ -8,5 +8,4 @@ a light indicator for your python code
 Sanjay Marison
 
 ## Installation
-Clone this repo 
-not available in pip
+Clone this repo (not available in pip)
