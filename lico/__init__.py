@@ -1,8 +1,7 @@
 # A module to control arduino lights according to the output of your code
 #Author: Sanjay Marison
 #LICO --- LIGHT CODE
-#and yea i know it resembles ligo(gravitational waves detector) in name
-#you free to do whatever u want with the code
+
 
 
 import pyfirmata
