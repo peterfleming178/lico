@@ -6,6 +6,3 @@ A light indicator using arduino for your python code
 
 ## Author 
 Sanjay Marison
-
-## Installation
-Clone this repo (not available in pip)
